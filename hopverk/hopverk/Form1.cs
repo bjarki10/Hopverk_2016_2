@@ -13,6 +13,8 @@ namespace hopverk
 {
     public partial class Form1 : Form
     {
+        bool start = false;
+
         List<int> listi2 = new List<int>();
 
         Random rnd = new Random();
@@ -46,7 +48,7 @@ namespace hopverk
             li_korfa.Columns.Add("Nafn", 200);
             li_korfa.Columns.Add("Voruflokkur", 120);
             li_korfa.Columns.Add("Verd", 60);
-            li_korfa.Columns.Add("ALager", 60);
+            li_korfa.Columns.Add("Magn", 60);
 
             li_lager.Clear();
             li_lager.Columns.Add("Nafn", 200);
@@ -92,7 +94,7 @@ namespace hopverk
             li_lager.Columns.Add("Nafn", 200);
             li_lager.Columns.Add("Voruflokkur", 120);
             li_lager.Columns.Add("Verd", 60);
-            li_lager.Columns.Add("ALager", 60);
+            li_lager.Columns.Add("Alager", 60);
 
             ListViewItem itm;
 
@@ -129,31 +131,36 @@ namespace hopverk
 
         private void bt_korfu_Click(object sender, EventArgs e)
         {
-            
-
-            ListViewItem itm;
-            string[] linaUrLista = karfa.Split(':');
-            string Nafn = linaUrLista[0];
-            string Voruflokkur = linaUrLista[1];
-            string Verd = linaUrLista[2];
-            string Magn = tb_magn.Text;
-
-            if (Magn.Any(x => !char.IsLetter(x)) && Convert.ToInt32(Magn) >= 1)
+            if (start)
             {
-                arr[0] = Nafn;
-                arr[1] = Voruflokkur;
-                arr[2] = Verd;
-                arr[3] = Magn;
+
+                ListViewItem itm;
+                string[] linaUrLista = karfa.Split(':');
+                string Nafn = linaUrLista[0];
+                string Voruflokkur = linaUrLista[1];
+                string Verd = linaUrLista[2];
+                string Magn = tb_magn.Text;
+
+                if (Magn.Any(x => !char.IsLetter(x)) && Convert.ToInt32(Magn) >= 1)
+                {
+                    arr[0] = Nafn;
+                    arr[1] = Voruflokkur;
+                    arr[2] = Verd;
+                    arr[3] = Magn;
 
 
-                itm = new ListViewItem(arr);
-                li_korfa.Items.Add(itm);
+                    itm = new ListViewItem(arr);
+                    li_korfa.Items.Add(itm);
+                }
+                else
+                {
+                    MessageBox.Show("Setu inn Magn hærri en 0");
+                }
             }
             else
             {
-                MessageBox.Show("Setu inn Magn hærri en 0");
+                MessageBox.Show("Veldu Voru");
             }
-                
                 
             
         }
@@ -167,13 +174,12 @@ namespace hopverk
             if (intSelectIndex >= 0)
             {
                 karfa = li_lager.SelectedItems[0].SubItems[0].Text + ":" + li_lager.SelectedItems[0].SubItems[1].Text + ":" + li_lager.SelectedItems[0].SubItems[2].Text;
+                start = true;
             }
         }
 
         private void li_korfa_SelectedIndexChanged(object sender, EventArgs e)
         {
-           
-            
         }
 
         private void bt_eda_Click(object sender, EventArgs e)

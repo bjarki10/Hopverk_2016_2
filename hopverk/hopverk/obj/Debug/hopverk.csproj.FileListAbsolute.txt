@@ -9,3 +9,13 @@ H:\hopverk_2016\hopverk\hopverk\obj\Debug\hopverk.pdb
 H:\hopverk_2016\hopverk\hopverk\obj\Debug\hopverk.Check_out.resources
 H:\hopverk_2016\hopverk\hopverk\bin\Debug\MySql.Data.dll
 H:\hopverk_2016\hopverk\hopverk\obj\Debug\hopverk.csprojResolveAssemblyReference.cache
+H:\hopverk\hopverk\hopverk\bin\Debug\hopverk.exe.config
+H:\hopverk\hopverk\hopverk\obj\Debug\hopverk.exe
+H:\hopverk\hopverk\hopverk\obj\Debug\hopverk.pdb
+H:\hopverk\hopverk\hopverk\bin\Debug\hopverk.exe
+H:\hopverk\hopverk\hopverk\bin\Debug\hopverk.pdb
+H:\hopverk\hopverk\hopverk\obj\Debug\hopverk.csprojResolveAssemblyReference.cache
+H:\hopverk\hopverk\hopverk\obj\Debug\hopverk.Check_out.resources
+H:\hopverk\hopverk\hopverk\obj\Debug\hopverk.Form1.resources
+H:\hopverk\hopverk\hopverk\obj\Debug\hopverk.Properties.Resources.resources
+H:\hopverk\hopverk\hopverk\obj\Debug\hopverk.csproj.GenerateResource.Cache
