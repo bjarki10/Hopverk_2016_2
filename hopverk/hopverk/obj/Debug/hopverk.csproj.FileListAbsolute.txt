@@ -19,3 +19,14 @@ H:\hopverk\hopverk\hopverk\obj\Debug\hopverk.Check_out.resources
 H:\hopverk\hopverk\hopverk\obj\Debug\hopverk.Form1.resources
 H:\hopverk\hopverk\hopverk\obj\Debug\hopverk.Properties.Resources.resources
 H:\hopverk\hopverk\hopverk\obj\Debug\hopverk.csproj.GenerateResource.Cache
+C:\Users\Robert\Documents\Visual Studio 2015\Projects\hopverk_2016_2\hopverk\hopverk\bin\Debug\hopverk.exe.config
+C:\Users\Robert\Documents\Visual Studio 2015\Projects\hopverk_2016_2\hopverk\hopverk\obj\Debug\hopverk.exe
+C:\Users\Robert\Documents\Visual Studio 2015\Projects\hopverk_2016_2\hopverk\hopverk\obj\Debug\hopverk.pdb
+C:\Users\Robert\Documents\Visual Studio 2015\Projects\hopverk_2016_2\hopverk\hopverk\bin\Debug\hopverk.exe
+C:\Users\Robert\Documents\Visual Studio 2015\Projects\hopverk_2016_2\hopverk\hopverk\bin\Debug\hopverk.pdb
+C:\Users\Robert\Documents\Visual Studio 2015\Projects\hopverk_2016_2\hopverk\hopverk\obj\Debug\hopverk.csprojResolveAssemblyReference.cache
+C:\Users\Robert\Documents\Visual Studio 2015\Projects\hopverk_2016_2\hopverk\hopverk\obj\Debug\hopverk.Admin.resources
+C:\Users\Robert\Documents\Visual Studio 2015\Projects\hopverk_2016_2\hopverk\hopverk\obj\Debug\hopverk.Check_out.resources
+C:\Users\Robert\Documents\Visual Studio 2015\Projects\hopverk_2016_2\hopverk\hopverk\obj\Debug\hopverk.Form1.resources
+C:\Users\Robert\Documents\Visual Studio 2015\Projects\hopverk_2016_2\hopverk\hopverk\obj\Debug\hopverk.Properties.Resources.resources
+C:\Users\Robert\Documents\Visual Studio 2015\Projects\hopverk_2016_2\hopverk\hopverk\obj\Debug\hopverk.csproj.GenerateResource.Cache
