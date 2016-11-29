@@ -197,6 +197,12 @@ namespace hopverk
         {
             
         }
+
+        private void bt_admin_Click(object sender, EventArgs e)
+        {
+            Admin admin = new Admin();
+            admin.Show();
+        }
     }
 }
 

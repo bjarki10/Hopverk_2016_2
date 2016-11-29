@@ -19,3 +19,4 @@ H:\hopverk\hopverk\hopverk\obj\Debug\hopverk.Check_out.resources
 H:\hopverk\hopverk\hopverk\obj\Debug\hopverk.Form1.resources
 H:\hopverk\hopverk\hopverk\obj\Debug\hopverk.Properties.Resources.resources
 H:\hopverk\hopverk\hopverk\obj\Debug\hopverk.csproj.GenerateResource.Cache
+H:\hopverk\hopverk\hopverk\obj\Debug\hopverk.Admin.resources
