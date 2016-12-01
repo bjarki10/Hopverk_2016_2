@@ -75,5 +75,46 @@ namespace hopverk
                 MessageBox.Show(ex.ToString());
             }
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            li_lager.Clear();
+            li_lager.Columns.Add("Nafn", 200);
+            li_lager.Columns.Add("Voruflokkur", 120);
+            li_lager.Columns.Add("Verd", 60);
+            li_lager.Columns.Add("Alager", 60);
+
+            ListViewItem itm;
+
+            linur = gagnagrunnur.LesautSQLToflu();
+
+            try
+            {
+
+                foreach (string lin in linur)
+                {
+                    string[] linaUrLista = lin.Split(':');
+                    string Nafn = linaUrLista[0];
+                    string Voruflokkur = linaUrLista[1];
+                    string Verd = linaUrLista[2];
+                    string ALager = linaUrLista[3];
+                    if (linaUrLista[0].ToLower().StartsWith(textBox1.Text))
+                    {
+                        arr[0] = Nafn;
+                        arr[1] = Voruflokkur;
+                        arr[2] = Verd;
+                        arr[3] = ALager;
+
+
+                        itm = new ListViewItem(arr);
+                        li_lager.Items.Add(itm);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
     }
 }

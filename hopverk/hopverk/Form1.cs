@@ -29,6 +29,8 @@ namespace hopverk
 
         Gagnagrunnur gagnagrunnur = new Gagnagrunnur();
 
+        bool Test;
+
         public Form1()
         {
             InitializeComponent();
@@ -200,9 +202,12 @@ namespace hopverk
 
         private void bt_admin_Click(object sender, EventArgs e)
         {
-            Admin admin = new Admin();
-            admin.Show();
+            
+                Admin_login admin = new Admin_login();
+                admin.Show();
+            
         }
+       
     }
 }
 
