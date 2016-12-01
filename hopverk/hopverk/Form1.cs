@@ -23,6 +23,7 @@ namespace hopverk
 
         List<string> linur = new List<string>();
 
+        string[] grr = new string[4];
         string[] arr = new string[4];
         
         string karfa;
@@ -195,7 +196,20 @@ namespace hopverk
 
         private void bt_Check_out_Click(object sender, EventArgs e)
         {
+            Check_out check_out = new Check_out();
+            int rounds = li_korfa.Items.Count;
+            string[,] array2D = new string[100,4];
+            for (int i = 0; i < li_korfa.Items.Count; i++)
+            {
+              array2D[i,0] = li_korfa.Items[i].SubItems[0].Text;
+              array2D[i,1] = li_korfa.Items[i].SubItems[1].Text;
+              array2D[i,2] = li_korfa.Items[i].SubItems[2].Text;
+              array2D[i,3] = li_korfa.Items[i].SubItems[3].Text;
+              check_out.Catch(array2D, rounds);
+            }
             
+            check_out.Show();
+
         }
 
         private void bt_admin_Click(object sender, EventArgs e)
@@ -203,7 +217,9 @@ namespace hopverk
             
                 Admin_login admin = new Admin_login();
                 admin.Show();
-            
+
+                
+                
         }
        
     }

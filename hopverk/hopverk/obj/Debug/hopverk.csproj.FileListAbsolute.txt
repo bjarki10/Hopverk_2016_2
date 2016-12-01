@@ -20,3 +20,4 @@ H:\hopverk\hopverk\hopverk\obj\Debug\hopverk.Properties.Resources.resources
 H:\hopverk\hopverk\hopverk\obj\Debug\hopverk.csproj.GenerateResource.Cache
 H:\hopverk\hopverk\hopverk\obj\Debug\hopverk.Admin.resources
 H:\hopverk\hopverk\hopverk\obj\Debug\hopverk.Admin_login.resources
+H:\hopverk\hopverk\hopverk\obj\Debug\hopverk.csprojResolveAssemblyReference.cache
