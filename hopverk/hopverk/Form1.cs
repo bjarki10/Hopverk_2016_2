@@ -29,8 +29,6 @@ namespace hopverk
 
         Gagnagrunnur gagnagrunnur = new Gagnagrunnur();
 
-        bool Test;
-
         public Form1()
         {
             InitializeComponent();

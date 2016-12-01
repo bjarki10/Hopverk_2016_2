@@ -79,26 +79,27 @@ namespace hopverk
             }
             return Faerslur;
         }
-        public void addtotable(string nafn, string skuld)
+        public void addtotable(string nafn, string Voruflokkur, string Verd, string ALager)
         {
             if (OpenConnection() == true) 
             {
-                fyrirspurn = "INSERT INTO skuld (nafn, Skuld) VALUES ('" + nafn + "','" + skuld + "')";
+                fyrirspurn = "INSERT INTO vorur (nafn,Voruflokkur,Verd,ALager) VALUES ('" + nafn + "','" + Voruflokkur + "','" + Verd + "','" + ALager + "')";
                 nySQLskipun = new MySqlCommand(fyrirspurn, sqltenging);
                 nySQLskipun.ExecuteNonQuery();
                 CloseConnection();
             }
         }
-        public void removefromtable(string nafn, string skuld)
+        public void removefromtable(string nafn)
         {
             if (OpenConnection() == true)
             {
-                fyrirspurn = "DELETE FROM skuld WHERE nafn='" + nafn + "' AND Skuld ='" + skuld + "'";
+                fyrirspurn = "DELETE FROM vorur WHERE nafn='" + nafn + "'";
                 nySQLskipun = new MySqlCommand(fyrirspurn, sqltenging);
                 nySQLskipun.ExecuteNonQuery();
                 CloseConnection();
                 }
             }
+
 
 
         
