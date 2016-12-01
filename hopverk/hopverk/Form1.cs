@@ -195,7 +195,8 @@ namespace hopverk
 
         private void bt_Check_out_Click(object sender, EventArgs e)
         {
-            
+            Check_out checkout = new Check_out();
+            checkout.Show();
         }
     }
 }
