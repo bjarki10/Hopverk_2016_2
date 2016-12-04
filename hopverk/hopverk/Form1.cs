@@ -13,6 +13,8 @@ namespace hopverk
 {
     public partial class Form1 : Form
     {
+        int heildarverd = 0;
+
         bool start = false;
 
         List<int> listi2 = new List<int>();
@@ -180,6 +182,7 @@ namespace hopverk
 
         private void li_korfa_SelectedIndexChanged(object sender, EventArgs e)
         {
+            
         }
 
         private void bt_eda_Click(object sender, EventArgs e)
@@ -195,8 +198,7 @@ namespace hopverk
 
         private void bt_Check_out_Click(object sender, EventArgs e)
         {
-            Check_out checkout = new Check_out();
-            checkout.Show();
+            
         }
     }
 }
